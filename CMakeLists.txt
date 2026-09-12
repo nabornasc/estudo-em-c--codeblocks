@@ -4,4 +4,5 @@ project(pOne C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(pOne
-        main.c)
+        main.c
+        aula1-2008.c)
