@@ -1,0 +1,53 @@
+# ==========================================================
+# Estrategia: ignorar tudo por padrao e liberar somente os
+# arquivos passivos/recomendados para versionar no GitHub:
+#   - codigo fonte (.c / .h)
+#   - scripts de build (CMakeLists.txt)
+#   - arquivo de projeto do Code::Blocks (.cbp)
+#   - documentacao (README, LICENSE) e o proprio .gitignore
+# Tudo o mais (artefatos de build, configs de IDE, arquivos
+# de cache/estado locais) permanece ignorado.
+# ==========================================================
+
+# Ignora todos os arquivos por padrao
+*
+
+# Permite entrar em subdiretorios para que o Git possa
+# encontrar arquivos liberados dentro deles (caso existam)
+!*/
+
+# --- Codigo fonte ---
+!*.c
+!*.h
+
+# --- Build / projeto ---
+!CMakeLists.txt
+!*.cbp
+
+# --- Documentacao ---
+!README*
+!LICENSE*
+
+# --- Meta ---
+!.gitignore
+
+# ==========================================================
+# Bloqueios explicitos (redundantes, mas deixam claro o que
+# NUNCA deve subir, mesmo se a regra "*" acima mudar)
+# ==========================================================
+
+# Diretorios de build (Code::Blocks / CMake)
+/bin/
+/obj/
+/cmake-build-debug/
+
+# Configuracoes de IDE
+/.idea/
+
+# Arquivos de estado/cache do Code::Blocks (gerados automaticamente)
+*.layout
+*.depend
+*.cscope_file_list
+
+# Arquivos temporarios / sem extensao definida
+Untitled*
