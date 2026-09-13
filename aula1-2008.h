@@ -8,5 +8,6 @@
 
 void exer_leitura_dados(void);
 void exer_lacos_repeticao(void);
+void exer_operacoes_basicas(void);
 
 #endif // AULA12008_H

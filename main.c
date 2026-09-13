@@ -12,6 +12,8 @@ int main(void){
 
         printf("1- Leitura de dados (Nome/ Idade)\n");
         printf("2- Laços de repetição (For/ While)\n");
+        printf("3- Operações Basicas (+/ -/ */ Média)\n");
+
 
         printf("0- Sair\n");
         printf("Escolha uma opção: ");
@@ -21,6 +23,7 @@ int main(void){
         switch(opcao){
             case 1: exer_leitura_dados();break;
             case 2: exer_lacos_repeticao();break;
+            case 3: exer_operacoes_basicas();break;
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;

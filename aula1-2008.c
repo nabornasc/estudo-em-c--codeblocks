@@ -27,3 +27,27 @@ void exer_lacos_repeticao(void){
         x--; // contador
     }
 }
+
+void exer_operacoes_basicas(void){
+    int num1,num2;
+    int soma,diferenca,produto;
+    float media;
+
+    printf("\n-- EXERCICIOS: OPERAÇÕES BASICAS --\n");
+    printf("Digite 1º numero inteiro: ");
+    scanf("%d",&num1);
+    printf("Digite 2º numero inteiro: ");
+    scanf("%d", &num2);
+
+    soma=num1+num2;
+    diferenca=num1-num2;
+    produto=num1*num2;
+    media=(float)soma/2;
+
+    printf("Resultado:\n");
+    printf("Soma = %d\n",soma);
+    printf("Diferença = %d\n",diferenca);
+    printf("Produto = %d\n",produto);
+    printf("Média = %.2f\n",media);
+
+}
