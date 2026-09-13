@@ -9,5 +9,10 @@
 void exer_leitura_dados(void);
 void exer_lacos_repeticao(void);
 void exer_operacoes_basicas(void);
+void exer_media_vetor(void);
+
+void exer_struct_aluno(void);
+void exer_maioridade(void);
+void exer_salario_bonus(void);
 
 #endif // AULA12008_H
