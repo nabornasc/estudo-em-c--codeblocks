@@ -14,5 +14,10 @@ void exer_media_vetor(void);
 void exer_struct_aluno(void);
 void exer_maioridade(void);
 void exer_salario_bonus(void);
+void exer_quociente_resto(void);
+void exer_area_triangulo(void);
+void exer_conversao_moeda(void);
 
 #endif // AULA12008_H
+
+
