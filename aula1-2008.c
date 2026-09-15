@@ -187,4 +187,18 @@ void exer_conversao_moeda(void){
 printf("\n");
 }
 
+//========================================================
 
+
+void prog_media_materia(void){
+    float nota1,nota2,nota3,media;
+
+    printf("\n-- PROGRAMA: CALCULO DE MEDIA MATÉRIA --\n");
+    printf("Digite as 3 notas, separadas por espaço: ");
+    scanf("%f %f %f",&nota1,&nota2,&nota3);
+
+    media=(nota1+nota2+nota3)/3;
+
+    printf("A media final foi %.1f\n",media);
+printf("\n");
+}

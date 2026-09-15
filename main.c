@@ -23,6 +23,7 @@ int main(void){
         printf("8- Calculo Quociente/Resto ()\n");
         printf("9- Calculo Area do Triangulo ()\n");
         printf("10- Conversão Moeda (R$ to US$)\n");
+        printf("11- Media 3 provas aluno ()\n");
 
         printf("0- Sair\n");
         printf("Escolha uma opção: ");
@@ -45,6 +46,7 @@ int main(void){
             case 8: exer_quociente_resto();break;
             case 9: exer_area_triangulo();break;
             case 10: exer_conversao_moeda();break;
+            case 11: prog_media_materia();break;
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;
