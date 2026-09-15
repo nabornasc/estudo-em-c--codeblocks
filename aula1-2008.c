@@ -199,6 +199,12 @@ void prog_media_materia(void){
 
     media=(nota1+nota2+nota3)/3;
 
-    printf("A media final foi %.1f\n",media);
+    printf("A media final foi %.1f ",media);
+
+    if(media>=6.0){
+        printf("-- Aprovado. PARABENS!");
+    } else {
+        printf("-- Reprovado!");
+    }
 printf("\n");
 }
