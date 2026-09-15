@@ -208,3 +208,20 @@ void prog_media_materia(void){
     }
 printf("\n");
 }
+
+void cont_num_negativos(void){
+    int num,cont_num;
+    cont_num<-0;
+
+    printf("Digite um número inteiros (ou -9999 para sair): ");
+    scanf("%d",&num);
+
+    while(num!=-9999){
+        if(num<0){
+            cont_num++;
+        }
+        printf("Digite o próximo número (ou -9999 para sair): ");
+        scanf("%d",&num);
+    }
+    printf("Total de números negativos digitados: %d",cont_num);
+}

@@ -19,6 +19,7 @@ void exer_area_triangulo(void);
 void exer_conversao_moeda(void);
 
 void prog_media_materia(void);
+void cont_num_negativos(void);
 
 #endif // AULA12008_H
 
