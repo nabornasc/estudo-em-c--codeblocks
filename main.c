@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <locale.h> // biblioteca de linguagem
 #include "aula1-2008.h" // cabeçalho
+#include "vetores.h"
 
 int main(void){
     setlocale(LC_ALL,"Portuguese"); // set linguagem dos caracteres em pt_BR
@@ -25,9 +26,11 @@ int main(void){
         printf("10- Conversão Moeda (R$ to US$)\n");
         printf("11- Media 3 provas aluno ()\n");
         printf("12- Contador de numero(int) negativo ()\n");
+        printf("\n===================================\n");
+        printf("13- teste vetor 1\n");
 
         printf("0- Sair\n");
-        printf("Escolha uma opção: ");
+        printf("\nEscolha uma opção: ");
 
         if (scanf("%d",&opcao)!=1){ //tratamento caso seja digitado caracteres
             while(getchar()!='\n');
@@ -49,6 +52,7 @@ int main(void){
             case 10: exer_conversao_moeda();break;
             case 11: prog_media_materia();break;
             case 12: cont_num_negativos();break;
+            case 13: test_vet1();break;
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;
