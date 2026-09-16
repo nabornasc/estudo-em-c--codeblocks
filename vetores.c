@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "vetores.h"
 
-#define MAX_ALUNOS 3
+#define MAX_ALUNOS 100
 
 void test_vet1(void){
 
@@ -26,18 +26,18 @@ void boletim_aluno(void){
     float notas[MAX_ALUNOS];
     int quant;
 
-    printf("===BOLETIM ALUNOS===\n");
+    printf("\n===BOLETIM ALUNOS===\n");
     printf("Quantos alunos: ");
     scanf("%d",&quant);
 
     if(quant>MAX_ALUNOS){
         printf("Maximo permitido: %d alunos.\n",MAX_ALUNOS);
-        return 1;
-    }
+        return;
+        }
 
-    for( int i=0;i<quant;i++){ // preencher vetor
-        printf("Digite nota aluno %d: ",i+1);
-        scanf("%d",&notas[i]);
+    for(int i=0;i<quant;i++){
+        printf("Digite a nota do aluno %d: ",i+1);
+        scanf("%f",&notas[i]);
     }
 
     float soma=0; // andar vetor e somar notas
@@ -56,5 +56,20 @@ void boletim_aluno(void){
         if(notas[i]<menor){menor=notas[i];posMenor=i;}
     }
 
+    int aprovados=0;
 
+    for(int i=0;i<quant;i++){ // contador de aprovados
+        if(notas[i]>=6.0) aprovados++;
+    }
+
+    printf("\n== RELATORIO FINAL ==\n");
+    printf("Notas: [ ");
+        for(int i=0;i<quant;i++) printf("%.1f ",notas[i]);
+    printf(" ]\n");
+    printf("Media da turma: %.1f\n",media);
+    printf("Maior nota: %.1f (Aluno: %d)\n",maior,posMaior+1);
+    printf("Menor nota: %.1f (Aluno: %d)\n",menor,posMenor+1);
+    printf("Aprovados c/(Nota >= 6.0): %d de %d\n",aprovados,quant);
 }
+
+
