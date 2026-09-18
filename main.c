@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <locale.h> // biblioteca de linguagem
-#include "aula1-2008.h" // cabeçalho
-#include "aula2-1709.h"
+#include "aula1_2008.h" // cabeçalho
+#include "aula2_1709.h"
 #include "vetores.h"
 #include "func_aux.h"
 
