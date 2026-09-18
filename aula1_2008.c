@@ -1,6 +1,6 @@
 #include <stdio.h> // bibliotecas C
 #include <stdlib.h>
-#include "aula1-2008.h" // importação cabeçalho
+#include "aula1_2008.h" // importação cabeçalho
 
 #define TOTAL_ALUNOS 3 // tamanho do vetor
 #define COTACAO 5.20f
