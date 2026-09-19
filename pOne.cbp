@@ -39,6 +39,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="aula2_1709.h" />
+		<Unit filename="aula3_2708.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="aula3_2708.h" />
 		<Unit filename="func_aux.c">
 			<Option compilerVar="CC" />
 		</Unit>

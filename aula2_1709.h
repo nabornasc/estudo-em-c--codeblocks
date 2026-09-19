@@ -1,5 +1,5 @@
-#ifndef AULA2-1709_H_INCLUDED
-#define AULA2-1709_H_INCLUDED
+#ifndef AULA2_1709_H_INCLUDED
+#define AULA2_1709_H_INCLUDED
 
 typedef struct No { // estrutura para lista encadeada
     int valor;

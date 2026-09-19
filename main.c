@@ -2,6 +2,7 @@
 #include <locale.h> // biblioteca de linguagem
 #include "aula1_2008.h" // cabeçalho
 #include "aula2_1709.h"
+#include "aula3_2708.h"
 #include "vetores.h"
 #include "func_aux.h"
 
@@ -9,6 +10,9 @@ int main(void){
     setlocale(LC_ALL,"Portuguese"); // set linguagem dos caracteres em pt_BR
 
     int opcao;
+
+    Aluno listaAlunos[TOTAL_ALUNOS]; // criação do vetor
+    int totalAlunos=TOTAL_ALUNOS; // processamento do total alunos
 
     do {
         limpar_tela();
@@ -34,6 +38,9 @@ int main(void){
         printf("13- Teste Vetor 1\n");
         printf("14- Boletim Turma ()\n");
         printf("15- Exemplo de Lista Encadeada (malloc)\n");
+        printf("\n===================================\n\n");
+        printf("16- Cadastrar Alunos (typedef/ fgets/ getchar)\n");
+        printf("17- Exibir Alunos Cadastrados //\\ \n ");
 
         printf("0- Sair\n");
         printf("\nEscolha uma opção: ");
@@ -61,6 +68,8 @@ int main(void){
             case 13: test_vet1();pausar();break;
             case 14: boletim_aluno();pausar();break;
             case 15: exer_lista_encadeada();pausar();break;
+            case 16: cadastrarAlunos(listaAlunos,totalAlunos);pausar();break;
+            case 17: exibirAlunos(listaAlunos,totalAlunos);pausar();break;
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;

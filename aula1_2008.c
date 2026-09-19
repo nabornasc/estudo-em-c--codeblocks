@@ -211,7 +211,7 @@ printf("\n");
 
 void cont_num_negativos(void){
     int num,cont_num;
-    cont_num<-0;
+    cont_num=0;
 
     printf("Digite um número inteiros (ou -9999 para sair): ");
     scanf("%d",&num);
