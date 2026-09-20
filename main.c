@@ -40,7 +40,13 @@ int main(void){
         printf("15- Exemplo de Lista Encadeada (malloc)\n");
         printf("\n===================================\n\n");
         printf("16- Cadastrar Alunos (typedef/ fgets/ getchar)\n");
-        printf("17- Exibir Alunos Cadastrados //\\ \n ");
+        printf("17- Exibir Alunos Cadastrados //\\\n ");
+        printf("\n===================================\n\n");
+        printf("20- Teste Numero Inteiro (Pos,Neg,ZERO)\n");
+        printf("21- Conversor Numero em Mes\n");
+        printf("22- Loop Numeros Pares (while +=2\n");
+        printf("23- Teste de login 'Simples' (do_while)\n");
+        printf("24- Analise de temperatuda ()\n");
 
         printf("0- Sair\n");
         printf("\nEscolha uma opção: ");
@@ -70,6 +76,13 @@ int main(void){
             case 15: exer_lista_encadeada();pausar();break;
             case 16: cadastrarAlunos(listaAlunos,totalAlunos);pausar();break;
             case 17: exibirAlunos(listaAlunos,totalAlunos);pausar();break;
+
+            case 20: teste_pos_neg_zero();pausar();break;
+            case 21: conversao_num_mes();pausar();break;
+            case 22: num_pares();pausar();break;
+            case 23: validacao_senha();pausar();break;
+            case 24: analise_temperatura();pausar();break;
+
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;
