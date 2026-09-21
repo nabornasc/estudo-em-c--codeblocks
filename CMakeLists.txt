@@ -16,6 +16,7 @@ add_executable(pOne
         main.c
         aula1_2008.c
         aula2_1709.c
+        aula3_2708.c
         func_aux.c
         vetores.c)
 
