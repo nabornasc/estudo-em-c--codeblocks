@@ -47,6 +47,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="func_aux.h" />
+		<Unit filename="lista_linear.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lista_linear.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

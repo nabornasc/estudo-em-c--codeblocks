@@ -5,6 +5,9 @@
 #include "aula3_2708.h"
 #include "vetores.h"
 #include "func_aux.h"
+#include "lista_linear.h"
+
+
 
 int main(void){
     setlocale(LC_ALL,"Portuguese"); // set linguagem dos caracteres em pt_BR
