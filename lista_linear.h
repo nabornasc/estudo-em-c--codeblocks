@@ -1,13 +1,13 @@
 #ifndef LISTA_LINEAR_H_INCLUDED
 #define LISTA_LINEAR_H_INCLUDED
 
+#ifndef TAM_MAX
+#define TAM_MAX 100
+#endif
 
 typedef struct {
     int dados[TAM_MAX];
     int tamanho;
 } ListaSequencial;
-
-
-
 
 #endif // LISTA_LINEAR_H_INCLUDED

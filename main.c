@@ -5,8 +5,10 @@
 #include "aula3_2708.h"
 #include "vetores.h"
 #include "func_aux.h"
-#include "lista_linear.h"
+// #include "lista_linear.h"
+#include <stdlib.h>
 
+#include "pilha_2409.h"
 
 
 int main(void){
@@ -15,51 +17,56 @@ int main(void){
     int opcao;
 
     Aluno listaAlunos[TOTAL_ALUNOS]; // criação do vetor
-    int totalAlunos=TOTAL_ALUNOS; // processamento do total alunos
+    Pilha pilha;
+    PilhaEncadeada pilhaEncadeada;
 
     do {
-        limpar_tela();
+        int totalAlunos=TOTAL_ALUNOS; // processamento do total alunos
 
-        printf("\n===================================\n");
-        printf("       MENU DE EXERCICIOS DE C         ");
-        printf("\n===================================\n");
+        // limpar_tela();
 
-        printf("1- Leitura de Dados (Nome/ Idade)\n");
-        printf("2- Laços de Repetição (For/ While)\n");
-        printf("3- Operações Basicas (+/ -/ */ Média)\n");
-        printf("4- Media de Vetor[10]\n");
-        printf("5- Cadastro de Aluno (typedef struct)\n");
-        printf("6- Verificar Maioridade (if/else)\n");
-        printf("\n===================================\n\n");
-        printf("7- Ajuste Salarial ()\n");
-        printf("8- Calculo Quociente/Resto ()\n");
-        printf("9- Calculo Area do Triangulo ()\n");
-        printf("10- Conversão Moeda (R$ to US$)\n");
-        printf("11- Media 3 provas aluno ()\n");
-        printf("12- Contador de numero(int) negativo ()\n");
-        printf("\n===================================\n\n");
-        printf("13- Teste Vetor 1\n");
-        printf("14- Boletim Turma ()\n");
-        printf("15- Exemplo de Lista Encadeada (malloc)\n");
-        printf("\n===================================\n\n");
-        printf("16- Cadastrar Alunos (typedef/ fgets/ getchar)\n");
-        printf("17- Exibir Alunos Cadastrados //\\\n ");
-        printf("\n===================================\n\n");
-        printf("20- Teste Numero Inteiro (Pos,Neg,ZERO)\n");
-        printf("21- Conversor Numero em Mes\n");
-        printf("22- Loop Numeros Pares (while +=2\n");
-        printf("23- Teste de login 'Simples' (do_while)\n");
-        printf("24- Analise de temperatuda ()\n");
+        printf(
+            "\n===================================\n"
+            "       MENU DE EXERCICIOS DE C\n"
+            "===================================\n"
+            "1- Leitura de Dados (Nome/ Idade)\n"
+            "2- Laços de Repetição (For/ While)\n"
+            "3- Operações Basicas (+/ -/ */ Média)\n"
+            "4- Media de Vetor[10]\n"
+            "5- Cadastro de Aluno (typedef struct)\n"
+            "6- Verificar Maioridade (if/else)\n"
+            "\n===================================\n\n"
+            "7- Ajuste Salarial ()\n"
+            "8- Calculo Quociente/Resto ()\n"
+            "9- Calculo Area do Triangulo ()\n"
+            "10- Conversão Moeda (R$ to US$)\n"
+            "11- Media 3 provas aluno ()\n"
+            "12- Contador de numero(int) negativo ()\n"
+            "\n===================================\n\n"
+            "13- Teste Vetor 1\n"
+            "14- Boletim Turma ()\n"
+            "15- Exemplo de Lista Encadeada (malloc)\n"
+            "\n===================================\n\n"
+            "16- Cadastrar Alunos (typedef/ fgets/ getchar)\n"
+            "17- Exibir Alunos Cadastrados //\\\n"
+            "\n===================================\n\n"
+            "20- Teste Numero Inteiro (Pos,Neg,ZERO)\n"
+            "21- Conversor Numero em Mes\n"
+            "22- Loop Numeros Pares (while +=2)\n"
+            "23- Teste de login 'Simples' (do_while)\n"
+            "24- Analise de temperatura ()\n"
+            "25- Inicializar Pilha (Array)\n"
+            "26- Inicializar Pilha (Encadeada)\n"
+            "0- Sair\n"
+            "\nEscolha uma opção: "
+        );
 
-        printf("0- Sair\n");
-        printf("\nEscolha uma opção: ");
-
-        if (scanf("%d",&opcao)!=1){ //tratamento caso seja digitado caracteres
-            while(getchar()!='\n');
+        if (scanf("%d", &opcao) != 1) { //tratamento caso seja digitado caracteres
+            while (getchar() != '\n') {}
             continue;
         }
 
-        while(getchar()!='\n'); // limpeza de buffer acumulada apos ENTER
+        while(getchar()!='\n') {} // limpeza de buffer acumulada apos ENTER
 
         switch(opcao){
             case 1: exer_leitura_dados();pausar();break;
@@ -85,7 +92,8 @@ int main(void){
             case 22: num_pares();pausar();break;
             case 23: validacao_senha();pausar();break;
             case 24: analise_temperatura();pausar();break;
-
+            case 25: pilhaInicializar(&pilha);pausar();break;
+            case 26: pilhaEncadeadaTeste(&pilhaEncadeada);pausar();break;
 
             case 0: printf("encerrando o programa...\n");break;
             default: printf("Opção invalida!\n");break;
@@ -94,7 +102,5 @@ int main(void){
     return 0;
 }
 
-// system("cls")
+// system("cls")||("clear")
 // lazarus
-
-

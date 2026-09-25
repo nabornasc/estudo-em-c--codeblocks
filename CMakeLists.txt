@@ -18,7 +18,10 @@ add_executable(pOne
         aula2_1709.c
         aula3_2708.c
         func_aux.c
-        vetores.c)
+        vetores.c
+        pilha_2409.c
+        pilha_2409.h
+        lista_linear.c)
 
 target_include_directories(pOne PRIVATE
         "${CMAKE_CURRENT_BINARY_DIR}")
